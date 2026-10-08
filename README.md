@@ -177,7 +177,7 @@ src/
   main.jsx           ponto de entrada, tema e providers
   styles.css         identidade visual e responsividade
 tests/               testes com node:test
-docs/                roteiro do vídeo, entrega e checklist
+docs/                informações para entrega
 ```
 
 
