@@ -130,22 +130,6 @@ tests/               testes com node:test
 docs/                roteiro do vídeo, entrega e checklist
 ```
 
-## Publicar o código no GitHub
-
-1. Crie um repositório **público** chamado `alugasom` no GitHub. Para seguir os comandos abaixo, crie-o vazio, sem README ou `.gitignore` automáticos.
-2. Abra o terminal na pasta do projeto.
-3. Substitua `SEU_USUARIO` pelo seu usuário e execute:
-
-```bash
-git init
-git add .
-git commit -m "Implementa AlugaSom com React, API pública e reserva simulada"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/alugasom.git
-git push -u origin main
-```
-
-O `.gitignore` exclui `node_modules/` e `dist/`. O arquivo `package-lock.json` deve ser enviado. A autenticação é feita pelo GitHub no seu computador.
 
 ## Verificação
 
