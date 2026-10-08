@@ -5,6 +5,7 @@
 **Integrante:** Pedro Augusto da Silva Morais — RA 2565935.
 
 **Vídeo de apresentação:** https://drive.google.com/drive/folders/14UenAQxdlNKHPGNmJw-8aX8WYdzQ66Hs?usp=drive_link
+                           https://youtu.be/AzP6XfAiPuQ?is=JGN8RcJiK6Xx_VQe
 
 **Hook / funcionalidade implementada:** `useReducer`, utilizado com Context API para gerenciar o catálogo, a seleção de instrumentos e as reservas simuladas.
 
