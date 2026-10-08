@@ -40,24 +40,74 @@ Este projeto está organizado para apresentação individual.
 
 ## Como executar
 
-Instale **Node.js 22.12 ou superior** (Node 24 também funciona) e npm.
+### Pré-requisitos
 
-Na pasta que contém `package.json`, execute:
+- Node.js 22.12 ou superior, com npm instalado.
+- Conexão com a internet para instalar as dependências e consultar a API pública do Wikidata.
+
+### 1. Baixar o projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/PedroAugustoMorais/Projeto1React_PedroAugusto_FullStack.git
+```
+
+Ou, no GitHub, selecione **Code → Download ZIP** e extraia o arquivo.
+
+### 2. Abrir a pasta
+
+Abra a pasta do projeto no VS Code. Em seguida, abra um terminal nessa pasta, onde está o arquivo `package.json`.
+
+Se utilizou o comando de clonagem, entre na pasta com:
+
+```bash
+cd Projeto1React_PedroAugusto_FullStack
+```
+
+### 3. Instalar as dependências
 
 ```bash
 npm ci
+```
+
+Esse comando instala as dependências conforme as versões registradas no `package-lock.json`.
+
+### 4. Iniciar a aplicação
+
+```bash
 npm run dev
 ```
 
-Abra o endereço informado pelo Vite, normalmente **http://localhost:5173**. É necessário ter internet para carregar a API. Não abra `index.html` diretamente pelo explorador de arquivos.
+Abra no navegador o endereço **Local** exibido no terminal, normalmente:
 
-Outros comandos:
+http://localhost:5173
+
+Mantenha o terminal aberto enquanto utiliza a aplicação. Para encerrar o servidor, pressione **Ctrl + C**.
+
+O catálogo precisa de internet para consultar o Wikidata. Não abra o `index.html` diretamente: utilize o endereço fornecido pelo Vite.
+
+### Outros comandos
+
+Executar os testes automatizados:
 
 ```bash
-npm test          # testes da API e das regras de aluguel
-npm run build    # gera a versão de produção em dist/
-npm run preview  # serve a versão gerada, normalmente na porta 4173
+npm test
 ```
+
+Gerar a versão de produção na pasta `dist`:
+
+```bash
+npm run build
+```
+
+Visualizar localmente a versão de produção, após executar o build:
+
+```bash
+npm run preview
+```
+
+O comando `preview` permite conferir o build no computador; ele não publica a aplicação na internet.
 
 ## API pública utilizada
 
@@ -139,7 +189,6 @@ Durante a preparação do pacote:
 - O build de produção foi gerado com Vite.
 - A consulta HTTP à API pública foi testada com os oito identificadores e o cabeçalho CORS foi conferido.
 
-A inspeção visual e o fluxo completo em um navegador não foram executados neste ambiente. Faça o checklist antes de gravar ou entregar. O teste HTTP não substitui a conferência de rede no navegador da apresentação.
 
 ## Uso de ferramentas de apoio e IA
 
